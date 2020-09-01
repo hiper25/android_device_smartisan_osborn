@@ -15,4 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mokee_osborn.mk
+    $(LOCAL_DIR)/rr_osborn.mk
+
+COMMON_LUNCH_CHOICES := \
+    rr_osborn-userdebug \
+    rr_osborn-eng

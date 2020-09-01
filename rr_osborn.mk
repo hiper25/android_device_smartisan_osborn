@@ -23,12 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, device/smartisan/osborn/device.mk)
 
 # Inherit some common MoKee stuff.
-$(call inherit-product, vendor/mokee/config/common_full_phone.mk)
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=XiNGRZ
+    ro.rr.maintainer=XiNGRZ
 
-PRODUCT_NAME := mokee_osborn
+PRODUCT_NAME := rr_osborn
 PRODUCT_BRAND := SMARTISAN
 PRODUCT_DEVICE := osborn
 PRODUCT_MANUFACTURER := smartisan
