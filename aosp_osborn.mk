@@ -23,13 +23,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, device/smartisan/osborn/device.mk)
 
 # Inherit some common MoKee stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_osborn
+PRODUCT_NAME := aosp_osborn
 PRODUCT_BRAND := SMARTISAN
 PRODUCT_DEVICE := osborn
 PRODUCT_MANUFACTURER := smartisan
-PRODUCT_MODEL := OS105
+PRODUCT_MODEL := Smartisan U3 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-smartisan
 
@@ -45,3 +45,8 @@ PRODUCT_SUPPORTS_BOOT_SIGNER := true
 PRODUCT_VERITY_SIGNING_KEY := build/target/product/security/verity
 
 TARGET_VENDOR := Smartisan
+TARGET_GAPPS_ARCH := arm64
+
+# PixelPlusUI Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.pixelplusui.maintainer=hiper25

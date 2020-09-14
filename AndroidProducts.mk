@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_osborn.mk
+    $(LOCAL_DIR)/aosp_osborn.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_osborn-userdebug \
-    lineage_osborn-eng
+    aosp_osborn-userdebug \
+    aosp_osborn-eng
